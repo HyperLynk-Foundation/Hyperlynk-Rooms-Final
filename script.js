@@ -3,6 +3,20 @@ if (!location.hash) {
     location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
   }
   const roomHash = location.hash.substring(1);
+
+  var roomUrl = roomHash;
+
+  function getUrlFromClipboard() {
+    /* Get the text field */
+    var copyText = roomUrl;
+  
+    /* Select the text field */
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  } 
   
   // TODO: Replace with your own channel ID
   const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
