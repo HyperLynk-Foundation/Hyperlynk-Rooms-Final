@@ -7,15 +7,11 @@ if (!location.hash) {
   var roomUrl = roomHash;
 
   function getUrlFromClipboard() {
-    /* Get the text field */
-    var copyText = roomUrl;
-  
-    /* Select the text field */
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
-  
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
+            var Url = document.getElementById("paste-box");
+            Url.value = window.location.href;
+            Url.focus();
+            Url.select();  
+            document.execCommand("Copy");
   } 
   
   // TODO: Replace with your own channel ID
