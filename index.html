@@ -47,11 +47,25 @@
     width: 100px;
     display: hidden;
     }
+    
+    #buttonanother{
+    margin: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: green;
+    color: #fff;
+    transition: 0.3s;
+    
+    }
   </style>
 </head>
 <body>
   <div class="copy"><b>Send your URL to a friend to get started</b></div>
-  <button onclick="getUrlFromClipboard()">Copy Room URL</button>
+  <button onclick="getUrlFromClipboard()" id="buttonanother">Copy Room URL</button>
   <textarea id="paste-box" rows="1" cols="30"></textarea>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
