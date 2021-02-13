@@ -127,3 +127,7 @@ if (!location.hash) {
       onError
     );
   }
+
+  function endCall() {
+    location.replace("https://hyperlynk.herokuapp.com/")
+  }
