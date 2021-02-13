@@ -14,14 +14,21 @@
       justify-content: center;
       padding: 0 50px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: lightslategrey;
     }
-    video {
-      max-width: calc(50% - 100px);
+    video {     
       margin: 0 50px;
       box-sizing: border-box;
       border-radius: 9px;
       padding: 0;
-      border: 1px solid #bdc3c7;
+    }
+
+    #localVideo{
+      max-width: 300px;
+    }
+
+    #remoteVideo{
+      max-width: 600px;
     }
     .copy {
       position: fixed;
@@ -29,58 +36,92 @@
       left: 50%;
       transform: translateX(-50%);
       font-size: 16px;
-      color: rgba(0, 0, 0, 0.5);
+      color: rgb(255, 255, 255);
     }
     #buttonexit {
       background-color: #e74c3c;
       border: none;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      transition: 0.3s;
+      float: bottom;
+    }
+
+    #buttonexit:hover {
+      cursor: pointer;
+      background-color: rgb(168, 11, 11);
+      transition: 0.3s;
+    }
+    
+
+    #myInput{
+      margin: 20px;
+      background-color: rgb(214, 214, 214);
+      border: none;
       border-radius: 6px;
+      padding: 5px;
+      text-align: center;
     }
-    
-    #paste-box{
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: rgb(214, 214, 214);
-    border: none;
-    border-radius: 6px;
-    padding: 5px;
-    text-align: center;
-    width: 100px;
-    display: hidden;
+
+    #copyButton{
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      transition: 0.3s;
     }
-    
-    #buttonanother{
-    margin: 20px;
-    margin-top: 40px;
-    cursor: pointer;
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: green;
-    color: #fff;
-    transition: 0.3s;
-    
+
+    #copyButton:hover {
+      background-color: rgb(170, 170, 170);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: inherit;
+      color: white;
+      text-align: center;
+    }
+
+    .copyUrl{
+      float: left;
+      padding: 30px;
+    }
+
+    #endcalldiv{
+      left: 0;
+      bottom: 0;
     }
   </style>
 </head>
 <body>
-  <div class="copy"><b>Send your URL to a friend to get started</b></div>
-  <button onclick="getUrlFromClipboard()" id="buttonanother">Copy Room URL</button>
-  <textarea id="paste-box" rows="1" cols="30"></textarea>
+<div class="copy"><b>Send your URL to a friend to get started</b></div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
+  <div class="footer">
+  <div id="endcalldiv">
+    <button id="buttonexit" onclick="endCall()" >Exit</button>
+  </div>
+  <div class="copyUrl">
+  <button onclick="getUrlFromClipboard()" id="copyButton">Copy text</button>
+  <input type="text" id="myInput" placeholder="Copied text">
+  </div>
+
+    
+  </div>
   <script src="script.js"></script>
- 
+
 
 </body>
   
   
     
-</html>
-
-<html>
-  
-       <button id="buttonexit">Exit Call</button>
-
-  
 </html>
