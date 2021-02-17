@@ -7,7 +7,7 @@ if (!location.hash) {
   var roomUrl = roomHash;
 
   function getUrlFromClipboard() {
-            var Url = document.getElementById("paste-box");
+            var Url = document.getElementById("myInput");
             Url.value = window.location.href;
             Url.focus();
             Url.select();  
