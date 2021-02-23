@@ -131,3 +131,7 @@ if (!location.hash) {
   function endCall() {
     location.replace("https://hyperlynk.herokuapp.com/")
   }
+
+function aboutWebsite() {
+    location.replace("https://hyperlynker.github.io/HyperlynkRoomsAboutWebsite/")
+  }
