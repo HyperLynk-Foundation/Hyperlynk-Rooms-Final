@@ -18,13 +18,10 @@ if (!location.hash) {
   // Room name needs to be prefixed with 'observable-'
   const roomName = 'observable-' + roomHash;
   const configuration = {
-    iceServers: [{
-      urls: 'stun:stun.l.google.com:19302',
-      {
-        url: 'turn:numb.viagenie.ca',
+    iceServers: [{           
+        urls: 'turn:numb.viagenie.ca',
         credential: 'muazkh',
-        username: 'webrtc@live.com'
-      },
+        username: 'webrtc@live.com'    
     }]
   };
   let room;
