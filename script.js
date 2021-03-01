@@ -14,7 +14,7 @@ if (!location.hash) {
             document.execCommand("Copy");
   } 
   
-  const drone = new ScaleDrone('NEZBRGzoKU3pFuG4');
+  const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
   // Room name needs to be prefixed with 'observable-'
   const roomName = 'observable-' + roomHash;
   const configuration = {
