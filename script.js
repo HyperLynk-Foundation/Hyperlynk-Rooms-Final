@@ -14,8 +14,7 @@ if (!location.hash) {
             document.execCommand("Copy");
   } 
   
-  // TODO: Replace with your own channel ID
-  const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
+  const drone = new ScaleDrone('NEZBRGzoKU3pFuG4');
   // Room name needs to be prefixed with 'observable-'
   const roomName = 'observable-' + roomHash;
   const configuration = {
