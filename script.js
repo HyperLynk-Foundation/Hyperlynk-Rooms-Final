@@ -20,8 +20,8 @@ if (!location.hash) {
   const configuration = {
     iceServers: [{
         urls: ['stun:stun.l.google.com:19302','turn:numb.viagenie.ca'],
-        credential: 'muazkh',
-        username: 'webrtc@live.com'    
+        credential: 'naman',
+        username: 'naman.patel@boothamstudent.co.uk'    
     }]
   };
   let room;
