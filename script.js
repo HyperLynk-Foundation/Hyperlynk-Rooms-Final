@@ -19,7 +19,7 @@ if (!location.hash) {
   const roomName = 'observable-' + roomHash;
   const configuration = {
     iceServers: [{
-      urls: 'stun:stun.l.google.com:19302'
+      urls: 'stun:stun.l.google.com:19302', 'turn:turn01.hubl.in?transport=udp'
     }]
   };
   let room;
