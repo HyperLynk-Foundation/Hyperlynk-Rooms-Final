@@ -52,7 +52,6 @@ body {
 }
 
 #localVideo{
-    position: absolute;
     top: 0;
     left: 0;
     margin: 16px;
@@ -83,12 +82,12 @@ body {
 
 <div class="navbar">
   <input type="text" id="myInput" placeholder="Copied text">
-  <button onclick="getUrlFromClipboard()" id="copyButton">Copy link</a> 
-  <button>Share Screen</a>
-  <button onclick="endCall()" id="buttonexit">End call</a>
+  <button onclick="getUrlFromClipboard()" id="copyButton">Copy link</button> 
+  <button>Share Screen</button>
+  <button onclick="endCall()" id="buttonexit">End call</button>
 </div>
-    <video width="1720" id="remoteVideo" height="880" autoplay>
-    <video width="1720" id="localVideo" height="880" autoplay muted>    
+    <video width="1720" id="localVideo" height="880" autoplay muted> 
+    <video width="1720" id="remoteVideo" height="880" autoplay>   
 <script src="script.js"></script>
 </body>
 </html>
