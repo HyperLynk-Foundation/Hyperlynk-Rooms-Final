@@ -76,6 +76,14 @@ body {
     font-size: 17px;
     margin: 20px;
 }
+#video-call-div {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline; 
+}
 
 </style>
 </head>
@@ -87,8 +95,10 @@ body {
   <button>Share Screen</button>
   <button onclick="endCall()" id="buttonexit">End call</button>
 </div>
+<div id="video-call-div">
     <video width="1720" id="localVideo" height="880" autoplay muted> 
-    <video width="1720" id="remoteVideo" height="880" autoplay>   
+    <video width="1720" id="remoteVideo" height="880" autoplay> 
+</div>
 <script src="script.js"></script>
 </body>
 </html>
