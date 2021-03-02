@@ -42,10 +42,6 @@ body {
   transition: 0.3s;
 }
 
-.main {
-  padding: 16px;
-}
-
 #remoteVideo{
     background-image: url('nocamera.png');
     background-repeat: no-repeat;
@@ -92,8 +88,8 @@ body {
   <button onclick="endCall()" id="buttonexit">End call</a>
 </div>
 <div class="main">
-    <video width="1720" id="remoteVideo" height="880" autoplay>
-    <video width="1720" id="localVideo" height="880" autoplay>
+    <video width="1720" id="localVideo" height="880" autoplay muted>
+    <video width="1720" id="remoteVideo" height="880" autoplay>    
 </div>
 <script src="script.js"></script>
 </body>
