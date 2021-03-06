@@ -78,6 +78,10 @@ body {
     margin: 20px;
 }
 
+#buttonexit{
+  background-color: red;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -87,6 +91,7 @@ body {
   <button onclick="getUrlFromClipboard()" id="copyButton">Copy link</button> 
   <button>Share Screen</button>
   <button onclick="endCall()" id="buttonexit">End call</button>
+  <button onclick="aboutWebsite()">About this site</button>
 </div>
   <video width="1720" id="remoteVideo" height="880" autoplay></video>  
   <video width="1720" id="localVideo" height="880" autoplay muted></video>
